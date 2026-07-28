@@ -9,8 +9,11 @@ As an incoming Computer Engineering student at the University of Manitoba, I wan
 ## What It Does
 
 - Models a traffic light cycling through RED → GREEN → YELLOW states with configurable durations
+- Supports two timing profiles: **normal** and **rush hour** (longer green lights), switchable at runtime
 - Models a pedestrian crossing signal (WALK / DON'T WALK) that responds to a pedestrian pressing a crossing button
 - Ensures pedestrians can only be given a WALK signal when the traffic light is RED (a basic safety constraint)
+- Gives pedestrians a fixed WALK duration, rather than walking for the entire red light — matching how real pedestrian signals work
+- Handles edge cases: repeated button presses, a pending request that waits patiently for the next red light, and a light change cutting a walk signal short
 - Runs a tick-based simulation (each "tick" represents one time step) and prints the state of both systems over time
 
 ## How to Run It
