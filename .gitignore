@@ -1,0 +1,6 @@
+# macOS system file - created automatically by Finder, not part of the project
+.DS_Store
+
+# Python cache files - generated automatically when running Python code
+__pycache__/
+*.pyc

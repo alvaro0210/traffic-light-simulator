@@ -22,11 +22,23 @@ As an incoming Computer Engineering student at the University of Manitoba, I wan
 python3 main.py
 ```
 
+To generate a visual timeline chart (saved as `simulation_timeline.png`):
+
+```bash
+python3 visualize.py
+```
+
 To run the unit tests:
 
 ```bash
 python -m unittest tests/test_traffic_controller.py -v
 ```
+
+## Example Output
+
+Running `visualize.py` produces a timeline chart like this, showing the full RED → GREEN → YELLOW cycle, the pedestrian WALK signal, and the moment rush hour timing kicks in:
+
+![Simulation Timeline](simulation_timeline.png)
 
 ## Project Structure
 
@@ -35,7 +47,8 @@ traffic-light-simulator/
 ├── README.md
 ├── traffic_controller.py   # Core traffic light state machine
 ├── pedestrian_crossing.py  # Pedestrian signal logic
-├── main.py                 # Runs the simulation
+├── main.py                 # Runs the text-based simulation
+├── visualize.py             # Generates a visual timeline chart
 └── tests/
     └── test_traffic_controller.py
 ```
